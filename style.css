@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&family=Ubuntu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    background-color: #F77F00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    text-align: center;
+    position: relative;
+    flex-basis: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    max-width: 80%;
+    opacity: 80%;
+    mix-blend-mode: multiply;
+}
+
+.head {
+    position: absolute;
+}
+
+.heading {
+    position: static;
+    font-size: 80px;
+    padding: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bolder;
+    z-index: 1;
+    width: 100%;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    transition: .5s;
+}
+
+.nav a:hover {
+    color: #fff;
+}
+
+.container {
+    width: 100vw;
+    background-color: #003049;
+    padding: 5% 10%;
+}
+
+.content {
+    width: 100%;
+    color: #fcbf49;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.content h2 {
+    flex-basis: 50%;
+    font-size: 40px;
+    font-family: 'ubuntu', sans-serif;
+    padding-left: 36px;
+}
+
+.content p {
+    flex-basis: 50%;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-2 {
+    width: 100vw;
+    background-color: #F77F00;
+    padding: 5% 10%;
+}
+
+.content-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.content-2 .meme {
+    mix-blend-mode: multiply;
+    width: 49%;
+    min-height: 50%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 0 20% 0 12%;
+}
+
+.content-3 {
+    width: 100%;
+    text-align: center;
+    color: #EAE2B7;
+}
+
+.content-3 h2 {
+    font-size: 40px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.content-3 p {
+    margin-top: 2%;
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.content-3 button {
+    margin-top: 3%;
+    padding: 2%;
+    font-family: 'roboto';
+    border: none;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.content-3 button:hover {
+    background-color: #F77F00;
+}
+
+.container-3 {
+    width: 100vw;
+    background-color: #D62828;
+    padding: 5% 10%;
+}
+
+.box {
+    padding: 20px 40px;
+    flex-basis: 32%;
+    min-height: 400px;
+    background-color: #ffffff27;
+    position: relative;
+    border-radius: 2%;
+    color: white;
+    transition: 1s;
+}
+
+.box:hover {
+    background-color: #ffffff90;
+    color: #000;
+    transform: scale(1.03);
+}
+
+.box-image {
+    width: 70px;
+    height: 70px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.box .text {
+    font-family: 'roboto';
+    font-size: 20px;
+    top: 120px;
+    position: absolute;
+    max-width: 80%;
+}
+
+.box .name {
+    position: absolute;
+    bottom: 40px;
+    font-size: 20px;
+    font-family: 'roboto';
+    font-weight: bold;
+}
+
+.content-4 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'roboto';
+}
+
+.content-4 ul {
+    text-align: start;
+    flex-direction: column;
+    width: 33.3%;
+    color: #fff;
+}
+
+.yellow {
+    color: #FCBF49;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logos img {
+    mix-blend-mode: multiply;
+    max-width: 40%;
+    height: 66px;
+    flex-basis: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+    .image {
+       flex-basis: 100%;
+    }
+
+    .logo{
+        width: 40%;
+    }
+
+    .heading {
+        font-size: 40px;
+    }
+
+    a {
+        font-size: 16px;
+    }
+
+    .content h2,
+    .content-3 h2 {
+        font-size: 30px;
+        flex-basis: 100%;
+    }
+
+    .content p,
+    .content-3 p {
+        padding-top: 16px;
+        flex-basis: 100%;
+        font-size: 18px;
+    }
+
+    .content-2 .meme {
+        flex-basis: 100%;
+        margin-top: 16px;
+    }
+
+    .content-3 button {
+        font-size: 16px;
+        border-radius: 4px;
+    }
+
+    .box {
+        flex-basis: 100%;
+        margin-top: 16px;
+    }
+
+    .content-4 ul {
+        flex-basis: 100%;
+        margin-top: 20px;
+    }
+
+    .yellow {
+        font-size: 24px;
+    }
+}
